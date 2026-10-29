@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PoshanBites | Homemade healthy snacks for kids, Delhi NCR</title>
+  <meta name="description" content="Homemade snacks and laddoos for kids, made with desi ghee, dals, oats and dry fruits. Order on WhatsApp for delivery across Delhi NCR.">
+  <link rel="canonical" href="https://poshanbites.com/">
+  <meta name="theme-color" content="#FDF8EC">
+
+  <!-- Link previews on WhatsApp, Instagram, Facebook and others -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PoshanBites">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:url" content="https://poshanbites.com/">
+  <meta property="og:title" content="PoshanBites | Homemade healthy snacks for kids, Delhi NCR">
+  <meta property="og:description" content="Homemade snacks and laddoos for kids, made with desi ghee, dals, oats and dry fruits. Order on WhatsApp for delivery across Delhi NCR.">
+  <meta property="og:image" content="https://poshanbites.com/images/share.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="PoshanBites, Little Snackers, Healthier Choices. Homemade snacks for kids in Delhi NCR, order on WhatsApp.">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Leaf icon for browser tabs and phone home screens -->
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Kalam:wght@400;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="products.js" defer></script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <!-- Reusable drawings: leaf sprigs, hearts and small icons. Used below with <use href="#...">. -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <path id="leaf-shape" d="M0 0C6-8 20-9 28 0C20 9 6 8 0 0Z"/>
+    </defs>
+
+    <!-- Tall leafy sprig for page decoration -->
+    <symbol id="sprig" viewBox="0 0 80 120">
+      <path d="M40 118C37 92 45 60 40 10" fill="none" stroke="var(--sprig-stem, #3F6B33)" stroke-width="2.5" stroke-linecap="round"/>
+      <use href="#leaf-shape" transform="translate(39 98) rotate(-150)" fill="var(--sprig-a, #3F6B33)"/>
+      <use href="#leaf-shape" transform="translate(41 82) rotate(-28)" fill="var(--sprig-b, #8DAA62)"/>
+      <use href="#leaf-shape" transform="translate(41 64) rotate(-148)" fill="var(--sprig-b, #8DAA62)"/>
+      <use href="#leaf-shape" transform="translate(42 47) rotate(-34) scale(.9)" fill="var(--sprig-a, #3F6B33)"/>
+      <use href="#leaf-shape" transform="translate(41 32) rotate(-142) scale(.82)" fill="var(--sprig-c, #D98A3D)"/>
+      <use href="#leaf-shape" transform="translate(41 21) rotate(-40) scale(.75)" fill="var(--sprig-b, #8DAA62)"/>
+      <use href="#leaf-shape" transform="translate(40 12) rotate(-92) scale(.7)" fill="var(--sprig-a, #3F6B33)"/>
+    </symbol>
+
+    <!-- Two-leaf sprout that sits above the wordmark -->
+    <symbol id="sprout" viewBox="0 0 40 30">
+      <path d="M20 29C20 22 21 16 23.5 11.5" fill="none" stroke="#3F6B33" stroke-width="2.4" stroke-linecap="round"/>
+      <path d="M20.5 21.5C13 22.5 6.5 18.5 4.5 10.5C13 9.5 19 14 20.5 21.5Z" fill="#7FA055"/>
+      <path d="M22.5 13.5C22 5.5 28 1 37.5 1C37.5 9.5 31.5 14.5 22.5 13.5Z" fill="#3F6B33"/>
+    </symbol>
+
+    <symbol id="heart" viewBox="0 0 24 24">
+      <path d="M12 20.5C7 16.6 3 13.2 3 8.9 3 6.1 5.2 4 7.8 4c1.8 0 3.3 1 4.2 2.6C12.9 5 14.4 4 16.2 4 18.8 4 21 6.1 21 8.9c0 4.3-4 7.7-9 11.6Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+    </symbol>
+
+    <symbol id="i-sprout" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 20.5V11"/>
+        <path d="M12 14C7.2 14 4.5 11 4.5 6.5 9.3 6.5 12 9.3 12 14Z"/>
+        <path d="M12 11c0-4.5 2.8-7.5 7.5-7.5 0 4.6-2.8 7.5-7.5 7.5Z"/>
+      </g>
+    </symbol>
+    <symbol id="i-flask" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M9 3h6"/>
+        <path d="M10 3v6.2L4.9 18a2 2 0 0 0 1.7 3h10.8a2 2 0 0 0 1.7-3L14 9.2V3"/>
+        <path d="M7.4 15h9.2"/>
+      </g>
+    </symbol>
+    <symbol id="i-wheat" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M12 22.5V8" stroke-linecap="round"/>
+        <ellipse cx="12" cy="4.6" rx="1.6" ry="2.8"/>
+        <ellipse cx="9.7" cy="9.6" rx="1.6" ry="3" transform="rotate(-38 9.7 9.6)"/>
+        <ellipse cx="14.3" cy="9.6" rx="1.6" ry="3" transform="rotate(38 14.3 9.6)"/>
+        <ellipse cx="9.7" cy="14.6" rx="1.6" ry="3" transform="rotate(-38 9.7 14.6)"/>
+        <ellipse cx="14.3" cy="14.6" rx="1.6" ry="3" transform="rotate(38 14.3 14.6)"/>
+      </g>
+    </symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24">
+      <path d="M12 20C7.3 16.3 3.8 13.2 3.8 9.2 3.8 6.7 5.7 4.8 8 4.8c1.7 0 3.1.9 4 2.4.9-1.5 2.3-2.4 4-2.4 2.3 0 4.2 1.9 4.2 4.4 0 4-3.5 7.1-8.2 10.8Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round">
+        <path d="M12 21.5s-6.8-6.2-6.8-11.3a6.8 6.8 0 0 1 13.6 0c0 5.1-6.8 11.3-6.8 11.3Z"/>
+        <circle cx="12" cy="10" r="2.4"/>
+      </g>
+    </symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="8.6"/>
+        <path d="M12 7.4V12l3.1 2"/>
+      </g>
+    </symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M2.5 6.5h11v9.5h-11z"/>
+        <path d="M13.5 9.5h4l3 3.3V16h-7"/>
+        <circle cx="7" cy="17.6" r="1.8" fill="var(--paper, #fff)"/>
+        <circle cx="17" cy="17.6" r="1.8" fill="var(--paper, #fff)"/>
+      </g>
+    </symbol>
+    <symbol id="i-info" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+        <circle cx="12" cy="12" r="8.6"/>
+        <path d="M12 11v5.2"/>
+        <path d="M12 7.8v.1"/>
+      </g>
+    </symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24">
+      <path d="M12 3.1a8.8 8.8 0 0 0-7.6 13.3l-1.2 4.4 4.5-1.2A8.8 8.8 0 1 0 12 3.1Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+      <path d="M9.1 7.8c.2-.4.4-.4.7-.4h.6c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .6l-.5.7c-.1.2-.2.3 0 .6.4.8 1 1.5 1.7 2 .5.4 1 .7 1.6.9.2.1.4.1.5-.1l.7-.8c.2-.2.3-.2.5-.1l1.8.9c.2.1.4.2.4.3.1.2.1.8-.2 1.4-.3.6-1.4 1.1-1.9 1.1-.5.1-1 .2-3.3-.7-2.7-1.1-4.4-3.8-4.5-4-.1-.2-1.1-1.4-1.1-2.7s.7-1.9.9-2.2Z" fill="currentColor"/>
+    </symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8">
+        <rect x="3.2" y="3.2" width="17.6" height="17.6" rx="5"/>
+        <circle cx="12" cy="12" r="4"/>
+      </g>
+      <circle cx="17.2" cy="6.8" r="1.15" fill="currentColor"/>
+    </symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- 1. Header -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="wordmark" href="#top" aria-label="PoshanBites, back to top">
+        <svg class="wordmark__sprout" aria-hidden="true" focusable="false"><use href="#sprout"/></svg>
+        <span class="wordmark__poshan">Poshan</span><span class="wordmark__bites">Bites</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="#snacks">Snacks</a></li>
+          <li><a href="#promise">Our promise</a></li>
+          <li><a href="#how-to-order">How to order</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn btn--primary btn--sm header-cta" href="https://wa.me/919822812616?text=Hi%20PoshanBites!%20I'd%20like%20to%20place%20an%20order." target="_blank" rel="noopener">
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-whatsapp"/></svg>
+        <span>Order<span class="hide-when-narrow"> on WhatsApp</span></span>
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- 2. Hero -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <svg class="sprig hero__sprig-left" aria-hidden="true" focusable="false"><use href="#sprig"/></svg>
+
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <h1 id="hero-title" class="hero__title">
+            <span class="hero__title-a">Little Snackers,</span>
+            <span class="hero__title-b">Healthier <span class="nowrap">Choices<svg class="heart hero__heart" aria-hidden="true" focusable="false"><use href="#heart"/></svg></span></span>
+          </h1>
+          <p class="hero__sub">Homemade snacks and laddoos for kids, made with desi ghee, dals, oats and dry fruits. Delivered across Delhi NCR.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="https://wa.me/919822812616?text=Hi%20PoshanBites!%20I'd%20like%20to%20place%20an%20order." target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-whatsapp"/></svg>
+              Order on WhatsApp
+            </a>
+            <a class="btn btn--ghost" href="#snacks">See our snacks</a>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <!-- Illustrative snack images from the posters; swap for real photos when available. -->
+          <div class="hero__frames" aria-hidden="true">
+            <div class="frame frame--1"><img src="images/products/green-goodness-bites.jpg" alt="" width="316" height="220"></div>
+            <div class="frame frame--2"><img src="images/products/coco-nutty-laddoo.jpg" alt="" width="426" height="220"></div>
+            <div class="frame frame--3"><img src="images/products/beetroot-rainbow-crackers.jpg" alt="" width="296" height="220"></div>
+          </div>
+          <p class="sticker sticker--blush hero__sticker">
+            Freshly made in a mother’s kitchen
+            <svg class="heart" aria-hidden="true" focusable="false"><use href="#heart"/></svg>
+          </p>
+          <svg class="sprig hero__sprig-right" aria-hidden="true" focusable="false"><use href="#sprig"/></svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Badges strip -->
+    <section class="badges-wrap" aria-label="What goes into our snacks">
+      <div class="container">
+        <ul class="badges">
+          <li class="badge">
+            <span class="badge__icon"><svg aria-hidden="true" focusable="false"><use href="#i-sprout"/></svg></span>
+            <span class="badge__label">No added sugar <small>(where applicable)</small></span>
+          </li>
+          <li class="badge">
+            <span class="badge__icon"><svg aria-hidden="true" focusable="false"><use href="#i-flask"/></svg></span>
+            <span class="badge__label">No preservatives <small>(where applicable)</small></span>
+          </li>
+          <li class="badge">
+            <span class="badge__icon"><svg aria-hidden="true" focusable="false"><use href="#i-wheat"/></svg></span>
+            <span class="badge__label">Wholesome ingredients</span>
+          </li>
+          <li class="badge">
+            <span class="badge__icon"><svg aria-hidden="true" focusable="false"><use href="#i-heart"/></svg></span>
+            <span class="badge__label">Freshly made in a mother’s kitchen</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 4. Our snack collection -->
+    <section class="section collection" id="snacks" aria-labelledby="snacks-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="snacks-title" class="section-title">
+            <svg class="section-title__sprig" aria-hidden="true" focusable="false"><use href="#sprout"/></svg>
+            Our snack collection
+          </h2>
+          <p class="kitchen-note">
+            <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-info"/></svg>
+            <span>All snacks are made in a home kitchen that handles wheat, milk, peanuts and tree nuts.</span>
+          </p>
+          <p class="photo-note">Photos are for illustration only. Actual snacks may look a little different.</p>
+          <!-- Shown once AGE_GUIDANCE is filled in main.js -->
+          <p class="age-note" hidden></p>
+        </div>
+
+        <noscript>
+          <p class="kitchen-note">Our snack list needs JavaScript to show. You can still order by messaging us on
+            <a href="https://wa.me/919822812616?text=Hi%20PoshanBites!%20I'd%20like%20to%20place%20an%20order." target="_blank" rel="noopener">WhatsApp</a>.</p>
+        </noscript>
+
+        <!-- Savoury snacks -->
+        <div class="group group--savoury">
+          <div class="group__head">
+            <h3 class="group__title">Savoury snacks</h3>
+            <p class="group__line">Healthy munchies for everyday adventures</p>
+          </div>
+
+          <ul class="cards" data-group="savoury">
+            <!-- Filled from products.js by main.js -->
+          </ul>
+        </div>
+
+        <!-- Sweet treats -->
+        <div class="group group--sweet">
+          <div class="group__head">
+            <h3 class="group__title">Sweet treats</h3>
+            <p class="group__line">Naturally sweetened, wholesome goodness</p>
+          </div>
+
+          <ul class="cards" data-group="sweet">
+            <!-- Filled from products.js by main.js -->
+          </ul>
+        </div>
+
+        <p class="sticker sticker--sage growing-note">
+          Our snack family is growing. Follow us on
+          <a href="https://www.instagram.com/poshanbites._/" target="_blank" rel="noopener">Instagram</a>
+          for new launches.
+          <svg class="heart" aria-hidden="true" focusable="false"><use href="#heart"/></svg>
+        </p>
+      </div>
+    </section>
+
+    <!-- 5. A mother's promise -->
+    <section class="promise" id="promise" aria-labelledby="promise-title">
+      <svg class="sprig promise__sprig promise__sprig--left" aria-hidden="true" focusable="false"><use href="#sprig"/></svg>
+      <svg class="sprig promise__sprig promise__sprig--right" aria-hidden="true" focusable="false"><use href="#sprig"/></svg>
+
+      <div class="container promise__inner">
+        <h2 id="promise-title" class="promise__title">
+          A mother’s promise
+          <svg class="heart" aria-hidden="true" focusable="false"><use href="#heart"/></svg>
+        </h2>
+        <blockquote class="promise__quote">
+          <p>“What I wouldn’t feed my own child, I would never feed yours. <span class="promise__seal">And that’s a promise.”</span></p>
+        </blockquote>
+        <div class="promise__rule" aria-hidden="true">
+          <span></span><svg class="heart"><use href="#heart"/></svg><span></span>
+        </div>
+        <p class="promise__text">Because little tummies deserve wholesome goodness, and every mother deserves more time to cuddle, play and make beautiful memories with her little ones.</p>
+      </div>
+    </section>
+
+    <!-- 6. How to order -->
+    <section class="section order" id="how-to-order" aria-labelledby="order-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="order-title" class="section-title">
+            <svg class="section-title__sprig" aria-hidden="true" focusable="false"><use href="#sprout"/></svg>
+            How to order
+          </h2>
+        </div>
+
+        <div class="order__grid">
+          <ol class="steps">
+            <li>Message us on WhatsApp or Instagram</li>
+            <li>We confirm availability and the total amount</li>
+            <li>Get it delivered to your doorstep</li>
+          </ol>
+
+          <ul class="delivery">
+            <li>
+              <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg>
+              <span>Currently delivering only in <strong class="nowrap">Delhi NCR</strong></span>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-clock"/></svg>
+              <span>Delivered within one day</span>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-truck"/></svg>
+              <span>Delivery charges shared at the time of order</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="order__cta">
+          <a class="btn btn--primary btn--lg" href="https://wa.me/919822812616?text=Hi%20PoshanBites!%20I'd%20like%20to%20place%20an%20order." target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-whatsapp"/></svg>
+            Order on WhatsApp
+          </a>
+          <p class="order__alt">
+            Prefer Instagram? Send us a message at
+            <a href="https://www.instagram.com/poshanbites._/" target="_blank" rel="noopener">@poshanbites._</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 7. Footer -->
+  <footer class="site-footer">
+    <svg class="site-footer__wave" viewBox="0 0 1440 40" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+      <path d="M0 22C160 6 300 34 480 20S800 2 980 18s320 16 460-2V40H0Z" fill="currentColor"/>
+    </svg>
+    <div class="site-footer__body">
+      <div class="container site-footer__inner">
+        <div class="site-footer__brand">
+          <p class="wordmark wordmark--footer">
+            <span class="wordmark__poshan">Poshan</span><span class="wordmark__bites">Bites</span>
+          </p>
+          <p class="site-footer__tagline">Little Snackers, Healthier Choices</p>
+        </div>
+
+        <div class="site-footer__connect">
+          <p class="site-footer__label">
+            Connect with us
+            <svg class="heart" aria-hidden="true" focusable="false"><use href="#heart"/></svg>
+          </p>
+          <ul class="site-footer__links">
+            <li>
+              <a href="https://www.instagram.com/poshanbites._/" target="_blank" rel="noopener">
+                <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-instagram"/></svg>
+                <span><span class="visually-hidden">Instagram: </span>@poshanbites._</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://wa.me/919822812616?text=Hi%20PoshanBites!%20I'd%20like%20to%20place%20an%20order." target="_blank" rel="noopener">
+                <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-whatsapp"/></svg>
+                <span><span class="visually-hidden">WhatsApp: </span>+91 98228 12616</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="site-footer__small">
+          <!-- Shown once FSSAI_NUMBER is filled in main.js -->
+          <p class="site-footer__fssai" hidden></p>
+          <p>Please check individual packaging for ingredients, allergens and best-before information.</p>
+          <p>Photos are for illustration only. Actual snacks may look a little different.</p>
+          <p>© 2026 PoshanBites</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
